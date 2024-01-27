@@ -238,59 +238,58 @@ extern unsigned int usb_rx_rd;
 #define MCLK_FREQ_MHZ           (8) // MCLK = 8MHz
 #define CLEAR_REGISTER     (0X0000)
 
-// Port 1 Pins
-#define RED_LED (0x01) // 0 RED LED 0
-#define V_A1_SEEED (0x02) // 1 A1_SEEED
-#define V_DETECT_L (0x04) // 2 V_DETECT_L
-#define V_DETECT_R (0x08) // 3 V_DETECT_R
-#define V_A4_SEEED (0x10) // 4 A4_SEEED
-#define V_THUMB (0x20) // 5 V_THUMB
-#define UCA0RXD (0x40) // 6 Back Channel UCA0RXD
-#define UCA0TXD (0x80) // 7 Back Channel UCA0TXD
+//Port 1 Pins
+#define A1_SPEED        (0x02)
+#define V_DETECT_L      (0x04)
+#define V_DETECT_R      (0x08)
+#define SMCLK_2476      (0x10)
+#define V_THUMB         (0x20)
+#define UCA0RXD         (0x40)
+#define UCA0TXD         (0x80)
 
 // Port 2 Pins
-#define RESET_LCD (0x01) // 0 RESET LCD
-#define Check_Bat (0x02) // 1 Check ADC Voltages
-#define IR_LED (0x04) // 2 IR_LED
-#define SW2 (0x08) // 3 SW2
-#define IOT_RUN_CPU (0x10) // 4 IOT_RUN_CPU
-#define DAC_ENB (0x20) // 5 DAC_ENB
-#define LFXOUT (0x40) // 6 XOUTR
-#define LFXIN (0x80) // 7 XINR
+#define RESET_LCD       (0x01) // 0 RESET LCD
+#define L_REVERSE_2476  (0x02) // 1 L_REVERSE FOR MSP430FR2476
+#define P2_2            (0x04) // 2
+#define SW2             (0x08) // 3 SW2
+#define IOT_RUN_CPU     (0x10) // 4 IOT_RUN_CPU
+#define DAC_ENB         (0x20) // 5 DAC_ENB
+#define LFXOUT          (0x40) // 6 XOUTR
+#define LFXIN           (0x80) // 7 XINR
 
 // Port 3 Pins
 #define TEST_PROBE (0x01) // 0 TEST PROBE
-#define OA2O (0x02) // 1 OA2O
-#define OA2N (0x04) // 2 OA2N
-#define OA2P (0x08) // 3 OA2P
-#define SMCLK (0x10) // 4 SMCLK
+#define DAC_CNTL1 (0x02) // 1 DAC_CNTL1
+#define OA2N (0x04) // 2 Photodiode Circuit
+#define LCD_BACKLITE (0x08) // 3 LCD_BACKLITE
+#define SMCLK_2355 (0x10) // 4 SMCLK
 #define DAC_CNTL (0x20) // 5 DAC signal from Processor
 #define IOT_LINK_CPU (0x40) // 6 IOT_LINK_CPU
 #define IOT_EN_CPU (0x80) // 7 IOT_EN_CPU
 
 // Port 4 Pins
-#define DAC_CNTL1 (0x01) // 0 DAC_CNTR1
+#define P4_0 (0x01) // 0 4_0
 #define SW1 (0x02) // 1 SW1
 #define UCA1RXD (0x04) // 2 Back Channel UCA1RXD
 #define UCA1TXD (0x08) // 3 Back Channel UCA1TXD
 #define UCB1_CS_LCD (0x10) // 4 Chip Select
-#define UCB1CLK (0x20) // 5 SPI mode - clock output—UCB1CLK
+#define UCB1CLK (0x20) // 5 SPI mode - clock outputï¿½UCB1CLK
 #define UCB1SIMO (0x40) // 6 UCB1SIMO
 #define UCB1SOMI (0x80) // 7 UCB1SOMI
+#define P4PUD (P4OUT)
 
 //Port 5 Pins
-#define V_BAT (0x01)
-#define V_5_0 (0x02)
-#define V_DAC (0x04)
-#define V_3_3 (0x08)
-#define IOT_BOOT (0x10)
+#define CHECK_BAT       (0x01)
+#define V_BAT           (0x02)
+#define V_DAC           (0x04)
+#define V_3_3           (0x08)
+#define IOT_BOOT_CPU    (0x10)
 
 //Port 6 Pins
-#define R_FORWARD (0x01)
-#define R_REVERSE (0x02)
-#define L_FORWARD (0x04)
-#define L_REVERSE (0x08)
-
-#define LCD_BACKLITE (0x10)
-#define P6_5 (0x20)
-#define GRN_LED (0x40)
+#define R_FORWARD       (0x01)
+#define L_FORWARD       (0x02)
+#define R_REVERSE       (0x04)
+#define L_REVERSE_2433  (0x08)
+#define IR_LED          (0x10)
+#define P6_5            (0x20)
+#define GRN_LED         (0x40)
